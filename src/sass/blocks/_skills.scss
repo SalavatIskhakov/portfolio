@@ -2,7 +2,7 @@
   padding-top: 120px;
   &__items {
     margin-top: 60px;
-    padding: 0 10px;
+    justify-content: center;
     display: grid;
     grid-template: repeat(2, minmax(270px, auto)) / repeat(4, 270px);
     grid-auto-rows: minmax(270px, auto);
