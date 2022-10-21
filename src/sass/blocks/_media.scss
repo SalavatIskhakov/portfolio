@@ -37,6 +37,19 @@
       grid-template: repeat(3, minmax(70px, auto)) / repeat(2, 350px);
     }
   }
+  .portfolio {
+    &__wrapper {
+      grid-template-columns: repeat(auto-fit, 280px);
+      grid-auto-rows: 280px;
+      justify-content: space-around;
+      row-gap: 35px;
+      .horizontal,
+      .vertical {
+        grid-row: unset;
+        grid-column: unset;
+      }
+    }
+  }
 }
 
 @media (max-width: 922px) {
@@ -141,6 +154,9 @@
       }
     }
   }
+  .portfolio {
+    padding-top: 40px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -178,7 +194,6 @@
     &__skills {
       grid-template-columns: auto;
       justify-content: center;
-
     }
   }
   .resume {
