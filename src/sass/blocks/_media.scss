@@ -52,7 +52,7 @@
   }
 }
 
-@media (max-width: 922px) {
+@media (max-width: 992px) {
   .container {
     max-width: 720px;
   }
@@ -91,6 +91,12 @@
         width: 300px;
       }
     }
+  }
+  .priceList {
+    &__items {
+      grid-template-columns: repeat(auto-fit, 350px);
+      padding: 0;
+    }    
   }
 }
 
@@ -157,6 +163,13 @@
   .portfolio {
     padding-top: 40px;
   }
+  .priceList {
+    padding-top: 40px;
+    &__items {
+      margin-top: 20px;
+      justify-content: center;
+    }
+  }
 }
 
 @media (max-width: 576px) {
@@ -216,6 +229,11 @@
       &-line {
         width: 300px;
       }
+    }
+  }
+  .priceList {
+    &__items {
+      grid-template-columns: repeat(auto-fit, 295px);
     }
   }
 }
